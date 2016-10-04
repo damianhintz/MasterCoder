@@ -11,7 +11,7 @@ namespace MasterCoderTesty
         [TestMethod]
         public void test_czy_konwerter_działa_dla_pustych_elementów()
         {
-            var konwerter = new Konwerter();
+            var konwerter = Konwerter.GetInstance();
             var queries = konwerter.ConvertToSqlInsert(
                 tabName: "USERS",
                 typesBuff: "STRING;STRING;STRING;STRING;STRING;INT;STRING;STRING",
@@ -39,7 +39,7 @@ namespace MasterCoderTesty
         [TestMethod]
         public void test_czy_konwerter_działa()
         {
-            var konwerter = new Konwerter();
+            var konwerter = Konwerter.GetInstance();
             var queries = konwerter.ConvertToSqlInsert(
                 tabName: "USERS",
                 typesBuff: "STRING;STRING;STRING;INT;DATE",

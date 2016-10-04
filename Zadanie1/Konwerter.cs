@@ -9,6 +9,12 @@ namespace SQLConverter
 {
     public class Konwerter : ISQLConverter
     {
+        public static new ISQLConverter GetInstance()
+        {
+            m_convInstance = new Konwerter();
+            return m_convInstance;
+        }
+
         public override List<SqlQuery> ConvertToSqlInsert(string tabName, string typesBuff, string colNamBuff, string dataBuff)
         {
             var queries = new List<SqlQuery>();
