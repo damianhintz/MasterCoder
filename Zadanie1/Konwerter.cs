@@ -10,6 +10,7 @@ namespace SQLConverter
     {
         public override List<SqlQuery> ConvertToSqlInsert(string tabName, string typesBuff, string colNamBuff, string dataBuff)
         {
+            //insert into tabName (colNamBuff) values (dataBuff)
             throw new NotImplementedException();
         }
     }
