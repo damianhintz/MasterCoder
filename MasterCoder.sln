@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6E19F61-D509-431D-B770-1455494AE310}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		Regulamin.pdf = Regulamin.pdf
 		Zadania-MasterCoder.html = Zadania-MasterCoder.html
 	EndProjectSection
 EndProject
