@@ -18,4 +18,4 @@ Do zrobienia
 
 2016-10-04 v1.0-beta
 
-* [Zadanie 1](https://www.mastercoder.pl/Tasks)
+* Rozwi¹zanie [zadania 1](https://www.mastercoder.pl/Tasks)
