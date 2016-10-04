@@ -14,26 +14,24 @@ namespace MasterCoderTesty
             var konwerter = new Konwerter();
             var queries = konwerter.ConvertToSqlInsert(
                 tabName: "USERS",
-                typesBuff: "STRING;STRING;STRING;INT;DATE",
-                colNamBuff: "USER;DESCRIPTION;NOTE;NUMBER;LOGINDATE",
+                typesBuff: "STRING;STRING;INT;INT;INT;DATE",
+                colNamBuff: "Pesel;FirstName;LastName;City;Street;StreetNo;Email;Login",
                 dataBuff:
-                    "MICHAEL;ADMIN;COMPANY;2051;2000-12-01 23:39\n" +
-                    "MICHAL;USER;COMPANY;2052;2000-12-01 00:00");
+                    "0000000000000;Ala;Kowalska;Lodz;Pilsudskiego;121;Ala1@wp.pl;Ala666\n" +
+                    "0000000000001;Adam;Kowalskai;Lodz;;;mojemial1@wp.pl;adam1");
             Assert.AreEqual(expected: 2, actual: queries.Count);
             var q1 = queries.First();
+            Assert.AreEqual(expected: 39, actual: q1.Components.Count);
             Assert.AreEqual(
-                expected: "INSERT INTO USERS (USER, DESCRIPTION, NOTE, NUMBER, LOGINDATE) " +
-                "VALUES ('MICHAEL', 'ADMIN', 'COMPANY', 2051, '2000-12-01 23:39');",
+                expected: "INSERT INTO USERS ( Pesel , FirstName , LastName , City , Street , StreetNo , Email , Login ) " +
+                "VALUES ( '0000000000000' , 'Ala' , 'Kowalska' , 'Lodz' , 'Pilsudskiego' , 121 , 'Ala1@wp.pl' , 'Ala666' ) ;",
                 actual: q1.ToString());
             var q2 = queries.Last();
+            Assert.AreEqual(expected: 31, actual: q2.Components.Count);
             Assert.AreEqual(
-                expected: "INSERT INTO USERS (USER, DESCRIPTION, NOTE, NUMBER, LOGINDATE) " +
-                "VALUES ('MICHAL' , 'USER' , 'COMPANY', 2052 , '2000-12-01 00:00');",
+                expected: "INSERT INTO USERS ( Pesel , FirstName , LastName , City , Email , Login ) " +
+                "VALUES ( '0000000000001' , 'Adam' , 'Kowalskai' , 'Lodz' , 'mojemial1@wp.pl' , 'adam1' ) ;",
                 actual: q2.ToString());
-            //STRING;STRING;INT;INT;INT;DATE
-            //Pesel;FirstName;LastName;City;Street;StreetNo;Email;Login
-            //0000000000000;Ala;Kowalska;Lodz;Pilsudskiego;121;Ala1@wp.pl;Ala666
-            //0000000000001;Adam;Kowalskai;Lodz;;;mojemial1@wp.pl;adam1
         }
 
         [TestMethod]
@@ -49,19 +47,17 @@ namespace MasterCoderTesty
                     "MICHAL;USER;COMPANY;2052;2000-12-01 00:00");
             Assert.AreEqual(expected: 2, actual: queries.Count);
             var q1 = queries.First();
+            Assert.AreEqual(expected: 27, actual: q1.Components.Count);
             Assert.AreEqual(
                 expected: "INSERT INTO USERS ( USER , DESCRIPTION , NOTE , NUMBER , LOGINDATE ) " +
                 "VALUES ( 'MICHAEL' , 'ADMIN' , 'COMPANY' , 2051 , '2000-12-01 23:39' ) ;",
                 actual: q1.ToString());
             var q2 = queries.Last();
+            Assert.AreEqual(expected: 27, actual: q2.Components.Count);
             Assert.AreEqual(
                 expected: "INSERT INTO USERS ( USER , DESCRIPTION , NOTE , NUMBER , LOGINDATE) " +
                 "VALUES ( 'MICHAL' , 'USER' , 'COMPANY' , 2052 , '2000-12-01 00:00' ) ;",
                 actual: q2.ToString());
-            //STRING;STRING;INT;INT;INT;DATE
-            //Pesel;FirstName;LastName;City;Street;StreetNo;Email;Login
-            //0000000000000;Ala;Kowalska;Lodz;Pilsudskiego;121;Ala1@wp.pl;Ala666
-            //0000000000001;Adam;Kowalskai;Lodz;;;mojemial1@wp.pl;adam1
         }
     }
 }
