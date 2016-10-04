@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0032)https://www.mastercoder.pl/Tasks -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.mastercoder.pl/favicon.ico">
+    <title>Zadania - MasterCoder</title>
+    <script src="./Zadania - MasterCoder_files/modernizr"></script>
+    <link href="./Zadania - MasterCoder_files/style" rel="stylesheet">
+    <link href="./Zadania - MasterCoder_files/style(1)" rel="stylesheet">
+
+    <meta name="description" content="MaserCoder 2016 - competition for programmers.">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-fixed-top mc-navbar">
+                <div class="container postion-relative">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="https://www.mastercoder.pl/Home"> </a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="https://www.mastercoder.pl/Home">Główna</a>
+                            </li>
+                            <li>
+                                <a href="https://www.mastercoder.pl/">News</a>
+                            </li>
+                            <li>
+                                <a class="active" href="https://www.mastercoder.pl/Tasks">Zadania</a>
+                            </li>
+                            <li>
+                                <a href="https://www.mastercoder.pl/UserDashboard">Rozwiązania</a>
+                            </li>
+                            <li>
+                                <a href="https://www.mastercoder.pl/Scoreboard">Ranking</a>
+                            </li>
+
+                        </ul>
+                        <form action="https://www.mastercoder.pl/Account/LogOff" class="" id="logoutForm" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="mEc9Mk9dwDW5sSUTTxs1UJtVtT86rdytnqa3wBsL8vtbJ1IwwYUUuT5xt-TEJ2xtG9p5rvNa1q6vVH_uN64ziU6vetKpghvmFsusEerk2JeTg-db-QPYfQTdh__73PovKkazK3A9dMlqHJenERcEWw2">        <ul class="nav navbar-nav navbar-right">
+                                <li class="username">
+                                    <a class="navlink" href="https://www.mastercoder.pl/Manage/ChangePassword" title="Zarządzaj">damianhintz</a>
+                                </li>
+                                <li>
+                                    <a class="navlink" href="javascript:document.getElementById(&#39;logoutForm&#39;).submit()">
+                                        Wyloguj
+                                    </a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div id="loginForm" class="display-none"></div>
+                </div>
+            </nav>
+            <div id="renderBody" class="container-fluid">
+                <div class="row">
+
+                    <div class="container">
+                        <div class="padding-top-20px">
+                            <div class="row">
+                                <div class="col-sm-13">
+                                    <h1 class="page-title text-bold text-primary">
+                                        Zadania
+                                    </h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="page-title text-bold text-primary">
+                                        Pliki
+                                    </h1>
+                                </div>
+                                <div id="task-item-1">
+                                    <div class="col-sm-13">
+                                        <div id="task-title" class="row">
+                                            <div class="col-sm-11">
+                                                <h3 class="text-bg text-worksans-bold">
+                                                    <span href="#task-item-1">Konwerter</span>
+                                                </h3>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <div class="pull-right">
+                                                    <div class="bottom">
+                                                        <span class="glyphicon glyphicon-time text-danger" data-toggle="tooltip" data-placement="left" title="" data-original-title="Czas zakończenia">
+                                                        </span>
+                                                        4 października 2016 20:00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3"></div>
+                                    <div class="col-sm-13">
+                                        <div class="mc-well">
+                                            <p>Międzynarodowe Targi w Japonii dotyczące najnowszych rozwiązań technologicznych właśnie dobiegły końca. Podczas targów Jasiu był w swoim żywiole. Rozwiązania jakich do tej pory nie widział ukazywały się jego oczom i wprawiały go w coraz większe zdumienie. Jego kalendarz był pełen spotkań, biegał od stoiska do stoiska zafascynowany tym co widział, przy okazji zdobywając nowe kontakty biznesowe. Jaś zebrał całą masę elektronicznych wizytówek, które zapisane są w formacie CSV. Jednak jak nad tym wszystkim zapanować? Pomóż Jasiowi uporządkować dane dodając je do jego bazy kontaktów.&nbsp;&nbsp;</p>
+                                            <p>&nbsp;</p>
+                                            <p><strong>OPIS:</strong>&nbsp;</p>
+                                            <p>Zadanie polega na zaimplementowaniu konwertera danych, który po otrzymaniu danych na wejściu, w określonym formacie (bufor z danymi, z pliku *csv), wygeneruje skrypt SQL-owy. Skrypt musi zawierać poprawną składnię SQL oraz być we wskazanym formacie, który umożliwi wstawienie danych do wskazanej tabeli (SQL INSERT). Na wejściu użytkownik otrzyma:&nbsp;</p>
+                                            <ul>
+                                                <li>nazwę tabeli, dla której wygeneruje skrypt</li>
+                                                <li>typy danych (buffor&nbsp; załadowany z pliksu *csv, separatorem będzie średnik <em>-&nbsp;<strong>';'</strong></em>)</li>
+                                                <li>nazwy kolumn (buffor&nbsp; załadowany z pliksu *csv, separatorem będzie średnik - <em><strong>';'</strong></em>)</li>
+                                                <li>dane (buffor&nbsp; załadowany z pliksu *csv, separatorem będzie średnik - <em><strong>';'</strong></em>).</li>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <p>Wynikiem uruchomienia programu ma być lista zawierająca SQL-owy INSERT, składający się z listy elemetów tego zapytania, bez białych znaków.&nbsp;</p>
+                                            <p>&nbsp;&nbsp;</p>
+                                            <p><strong>PRZYKŁAD:</strong>&nbsp;</p>
+                                            <p>Użytkownik otrzyma bufor danych załadowany z pliku *.csv. Jeden bufor *.csv będzie zawierał typy danych dla kolejnych kolumn z tabeli, np:&nbsp;</p>
+                                            <p><strong>"STRING;STRING;INT;INT;INT;DATE\r\n"</strong>&nbsp;</p>
+                                            <p>Drugi bufor *.csv będzie zawierał nazwy pól z tabeli, np:&nbsp;</p>
+                                            <p><strong>"</strong><strong>Pesel;FirstName;LastName;City;Street;StreetNo;Email;Login</strong><strong>\r\n"</strong>&nbsp;</p>
+                                            <p>Natomiast kolejny będzie zawierał dane <strong>(uwaga, nie wszystkie dane muszą się pojawić!)</strong>, np:&nbsp;</p>
+                                            <p><strong>"0000000000000;Ala;Kowalska;Lodz;Pilsudskiego;121;Ala1@wp.pl;Ala666\r\n</strong>&nbsp;</p>
+                                            <p><strong>&nbsp;0000000000001;Adam;Kowalskai;Lodz;;;mojemial1@wp.pl;adam1\r\n</strong>&nbsp;</p>
+                                            <p><strong><em>&nbsp;…"</em></strong>&nbsp;</p>
+                                            <p>&nbsp;</p>
+                                            <p>Z otrzymanych danych wejściowych należy wygenerować listę „SQL-owych insertów” jako listę poszczególnych elementów&nbsp; zapytania (bez białych znaków), w następującej formie:&nbsp;</p>
+                                            <p>INSERT INTO TABLE_NAME (NAZWY PÓL) VALUES&nbsp; (WARTOŚCI);&nbsp;</p>
+                                            <p>&nbsp;</p>
+                                            <p><strong>Przykładowy wynik uruchomienia programu w pseudokodzie:</strong>&nbsp;</p>
+                                            <p><em>LISTA&lt;SQLINSERT&gt;()</em>&nbsp;</p>
+                                            <p><em>{&nbsp;</em>&nbsp;</p>
+                                            <p><em>[0] = {"<strong>INSERT</strong>", <strong>INTO</strong>","<strong>NAZWA_TABELI</strong>","<strong>(</strong>","<strong>POLE1</strong>","<strong>,</strong>"," '<strong>POLE2</strong>'"…</em><em>"<strong>)</strong>","<strong>VALUES</strong>","<strong>(</strong>" ,"<strong>VALUE1</strong>","<strong>,</strong>","<strong>'VALUE2'</strong>",…"<strong>)</strong>","<strong>;</strong>" }</em>&nbsp;</p>
+                                            <p><em>};</em>&nbsp;</p>
+                                            <p>&nbsp;</p>
+                                            <p><em>LISTA&lt;SQLINSERT&gt;()</em>&nbsp;</p>
+                                            <p><em>{&nbsp;</em>&nbsp;</p>
+                                            <p><em>[0] = {"<strong>INSERT</strong>","<strong>INTO</strong>","<strong>USERS</strong>","<strong>(</strong>","<strong>USERNAME</strong>", "<strong>,</strong>","<strong>AGE</strong>"…</em><em>"<strong>)</strong>","<strong>VALUES</strong>","<strong>(</strong>" ,"'<strong>JANEK01</strong>'","<strong>,</strong>","<strong>25</strong>",…"<strong>)</strong>","<strong>;</strong>" }</em>&nbsp;</p>
+                                            <p><em>};</em>&nbsp;</p>
+                                            <p>&nbsp;</p>
+                                            <p><em>**&nbsp; dane w buforach </em><em>będa</em><em> oddzielone średnikiem - <strong>';'&nbsp;</strong></em>&nbsp;</p>
+                                            <p><em>*&nbsp; dane w buforach mogą zawierać więcej niż jedną linię w przypadku danych z których należy wygenerować "SQL-we inserty", jedna linia odpowiada jednemu "insertowi"</em>&nbsp;</p>
+                                            <p>&nbsp;</p>
+                                            <p>Następnie należy zwrócić listę zapytań. W tym przypadku lista będzie jednoelementowa – jeden INSERT zawierający wszystkie składowe zapytania tj. INSERT, INTO … oraz średnik -&nbsp;<em><strong>';'</strong> </em>!!!!&nbsp;</p>
+                                            <p>&nbsp;</p>
+                                            <p>Input: Nazwa tabeli, typy pól w tabeli, nazwy kolumn, dane.</p>
+                                            <p>Output: Lista zapytań SQL INSERT, która będzie zawierała listę składowych zapytania, bez białych znaków, tak by po odseparowaniu wszystkich elementów spacją, SQL INSERT był poprawny pod względem składniowym i zakończył się powodzeniem.</p>
+                                            <p>&nbsp;</p>
+                                            <p>Rozwiązanie powinno implementować interfejs <strong>ISQLConverter</strong>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="text-center">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <a href="https://www.mastercoder.pl/Tasks/DownloadAttachment?taskNo=1&amp;fileName=ISQLConverter.cs" class="text-bold text-primary" style="font-size: 14px">
+                                                        <img src="./Zadania - MasterCoder_files/csharp.png" alt="Pobierz C#" title="ISQLConverter.cs" width="50" height="60">
+                                                        Pobierz
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <a href="https://www.mastercoder.pl/Tasks/DownloadAttachment?taskNo=1&amp;fileName=ISQLConverter.h" class="text-bold text-primary" style="font-size: 14px">
+                                                        <img src="./Zadania - MasterCoder_files/cpp.png" alt="Pobierz C++" title="ISQLConverter.h" width="50" height="60">
+                                                        Pobierz
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <a href="https://www.mastercoder.pl/Tasks/DownloadAttachment?taskNo=1&amp;fileName=ISQLConverter.java" class="text-bold text-primary" style="font-size: 14px">
+                                                        <img src="./Zadania - MasterCoder_files/java.png" alt="Pobierz Java" title="ISQLConverter.java" width="50" height="60">
+                                                        Pobierz
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <a href="https://www.mastercoder.pl/Tasks/DownloadAttachment?taskNo=1&amp;fileName=SqlQuery.cs" class="text-bold text-primary" style="font-size: 14px">
+                                                        <img src="./Zadania - MasterCoder_files/csharp.png" alt="Pobierz C#" title="SqlQuery.cs" width="50" height="60">
+                                                        Pobierz
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <a href="https://www.mastercoder.pl/Tasks/DownloadAttachment?taskNo=1&amp;fileName=SqlQuery.h" class="text-bold text-primary" style="font-size: 14px">
+                                                        <img src="./Zadania - MasterCoder_files/cpp.png" alt="Pobierz C++" title="SqlQuery.h" width="50" height="60">
+                                                        Pobierz
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <a href="https://www.mastercoder.pl/Tasks/DownloadAttachment?taskNo=1&amp;fileName=SqlQuery.java" class="text-bold text-primary" style="font-size: 14px">
+                                                        <img src="./Zadania - MasterCoder_files/java.png" alt="Pobierz Java" title="SqlQuery.java" width="50" height="60">
+                                                        Pobierz
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <a class="footer-left" href="http://www.cybercom.com/pl/Poland/" target="_blank">
+                <img src="./Zadania - MasterCoder_files/cybercom-logo.png" width="160" height="70">
+            </a>
+            <div class="footer-center">
+                <a href="https://www.mastercoder.pl/Account/TermsAndCondition" target="_blank">Regulamin</a>
+                | © 2016 Cybercom Poland Sp. z o.o.
+            </div>
+            <div class="footer-right">
+                <a href="mailto:mastercoder.poland@cybercom.com"><span class="icomoon-icon-email"></span></a>
+                <a href="https://twitter.com/CybercomPL" target="_blank"><span class="icomoon-icon-twitter"></span></a>
+                <a href="https://www.facebook.com/cybercom.poland.group" target="_blank"><span class="icomoon-icon-facebook"></span></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./Zadania - MasterCoder_files/libs"></script>
+    <script src="./Zadania - MasterCoder_files/app"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            new App.McConfig(moment);
+
+            $.ajaxSetup({
+                cache: false
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+</body>
+</html>
