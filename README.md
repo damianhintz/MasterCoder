@@ -1,19 +1,21 @@
-# MasterCoder v1.0-beta, 4 paüdziernika 2016
+# MasterCoder v2.0-alfa, 5 paüdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwiπzania
 
 ## Zadanie 1
 
+Rozwiπzanie zosta≥o odrzucone.
+
 ## Zadanie 2
 
-Problem sumy podzbioru (problem NP-zupe≥ny)
+[Problem sumy podzbioru](https://pl.wikipedia.org/wiki/Problem_sumy_podzbioru)
 
 # Historia
 
 Do zrobienia
 
-* [x] Zadanie 1. Konwerter
+* [ ] Zadanie 1. Konwerter
 * [ ] Zadanie 2. Dostarczanie paliwa na stacjÍ kosmicznπ
 * [ ] Zadanie 3
 * [ ] Zadanie 4
