@@ -1,12 +1,20 @@
 # MasterCoder v1.0-beta, 4 paŸdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
+# Szkic rozwi¹zania
+
+## Zadanie 1
+
+## Zadanie 2
+
+Problem sumy podzbioru (problem NP-zupe³ny)
+
 # Historia
 
 Do zrobienia
 
-* [x] Zadanie 1
-* [ ] Zadanie 2
+* [x] Zadanie 1. Konwerter
+* [ ] Zadanie 2. Dostarczanie paliwa na stacjê kosmiczn¹
 * [ ] Zadanie 3
 * [ ] Zadanie 4
 * [ ] Zadanie 5
