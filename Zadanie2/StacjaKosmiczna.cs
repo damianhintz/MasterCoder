@@ -9,7 +9,12 @@ namespace Containers
     public class StacjaKosmiczna : IContainers
     {
         int _potrzebneKontenery; //najmniejsza liczba potrzebnych kontenerów
-        //int[] _sumyPośrednie;
+                                 //int[] _sumyPośrednie;
+
+        public new static IContainers GetInstance()
+        {
+            return new StacjaKosmiczna();
+        }
 
         public override int countCombinations(int fuelVolume, List<int> containers)
         {

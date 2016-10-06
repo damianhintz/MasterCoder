@@ -13,7 +13,7 @@ namespace MasterCoderTesty
         public void test_czy_przykład_1()
         {
             var kontenery = new List<int>(new[] { 20, 15, 10, 10, 8, 5 });
-            var stacja = new StacjaKosmiczna();
+            var stacja = StacjaKosmiczna.GetInstance();
             var liczbaKontenerów = stacja.countCombinations(
                 fuelVolume: 40,
                 containers: kontenery);
