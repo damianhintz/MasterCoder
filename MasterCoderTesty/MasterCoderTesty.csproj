@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Zadanie3Test.cs" />
     <Compile Include="Zadanie2Test.cs" />
     <Compile Include="Zadanie1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +65,10 @@
     <ProjectReference Include="..\Zadanie2\Zadanie2.csproj">
       <Project>{ea5ec0a6-2040-4b48-ba20-33ac5d7385a1}</Project>
       <Name>Zadanie2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zadanie3\Zadanie3.csproj">
+      <Project>{8c21581f-e256-4824-9297-7374eb0e5862}</Project>
+      <Name>Zadanie3</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
