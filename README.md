@@ -1,4 +1,4 @@
-# MasterCoder v2.0-alfa, 5 paüdziernika 2016
+# MasterCoder v2.0-beta, 6 paüdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwiπzania
@@ -25,6 +25,10 @@ Do zrobienia
 * [ ] Zadanie 8
 * [ ] Zadanie 9
 * [ ] Zadanie 10
+
+2016-10-06 v2.0-beta
+
+* Rozwiπzanie [zadania 2](https://www.mastercoder.pl/Tasks)
 
 2016-10-04 v1.0-beta
 

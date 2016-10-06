@@ -8,21 +8,55 @@ namespace Containers
 {
     public class StacjaKosmiczna : IContainers
     {
+        int _potrzebneKontenery; //najmniejsza liczba potrzebnych kontenerów
+        //int[] _sumyPośrednie;
+
         public override int countCombinations(int fuelVolume, List<int> containers)
         {
-            var kontenery = containers
-                .OrderByDescending(c => c)
-                .ToArray();
-            var paliwo = fuelVolume;
-            for(int i = 0; i < kontenery.Count(); i++)
+            if (fuelVolume <= 0) return 0;
+            if (containers == null) return 0;
+            if (containers.Count == 0) return 0;
+            for (int i = 0; i < containers.Count; i++)
             {
-                var kontener = kontenery[i];
-                if (kontener < paliwo)
+                if (containers[i] == fuelVolume)
                 {
-                    paliwo -= kontener;
+                    return 1; //optymalizacja dla jednego kontenera
                 }
             }
-            throw new NotImplementedException();
+            //sortowanie kontenerów malejąco
+            var posortowaneKontenery = containers
+                .OrderByDescending(c => c)
+                .ToArray();
+            //_sumyPośrednie = new int[containers.Count];
+            //for (int i = posortowaneKontenery.Length - 2; i >= 0; i--) _sumyPośrednie[i] = _sumyPośrednie[i + 1] + posortowaneKontenery[i + 1];
+            _potrzebneKontenery = posortowaneKontenery.Length + 1;
+            subsets(
+                paliwo: fuelVolume,
+                index: 0,
+                kontenery: posortowaneKontenery,
+                count: 0);
+            return _potrzebneKontenery > posortowaneKontenery.Length ?
+                0 : //nie znaleziono takiej kombinacji kontenerów, która pozwoli zabrać paliwo
+                _potrzebneKontenery;
+        }
+
+        void subsets(int paliwo, int index, int[] kontenery, int count)
+        {
+            if (paliwo == 0)
+            {
+                if (count < _potrzebneKontenery)
+                {
+                    _potrzebneKontenery = count; //nowa kombinacja kontenerów jest lepsza
+                }
+                return; //znaleźliśmy kombinację kontenerów, która pozwoli zabrać paliwo
+            }
+            for (int i = index; i < kontenery.Length; i++)
+            {
+                int pojemnośćKontenera = kontenery[i];
+                if (pojemnośćKontenera > paliwo) continue; //kontener jest za duży
+                //if (_sumyPośrednie[i] < paliwo - pojemnośćKontenera) return;
+                subsets(paliwo - pojemnośćKontenera, i + 1, kontenery, count + 1);
+            }
         }
     }
 }
