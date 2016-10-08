@@ -1,4 +1,4 @@
-# MasterCoder v4.0-alfa, 7 paŸdziernika 2016
+# MasterCoder v4.0-alfa, 8 paŸdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwi¹zania
@@ -19,6 +19,14 @@ Tajemnicze sygna³y.
 
 ## Zadanie 4
 
+[Problem ustalenia liczby zer na koñcu zapisu dziesiêtnego silni](https://pl.wikipedia.org/wiki/Silnia)
+
+[Factorial](http://mathworld.wolfram.com/Factorial.html)
+
+Z = floor(n/5) + floor(n/5^2) + ... + floor(n/5^k)
+
+k = floor(log5(n))
+
 # Historia
 
 Do zrobienia
@@ -33,6 +41,10 @@ Do zrobienia
 * [ ] Zadanie 8
 * [ ] Zadanie 9
 * [ ] Zadanie 10
+
+2016-10-08 v4.0-beta
+
+* Rozwi¹zanie [zadania 4](https://www.mastercoder.pl/Tasks)
 
 2016-10-06 v3.0-beta
 

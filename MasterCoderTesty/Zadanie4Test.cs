@@ -12,8 +12,31 @@ namespace MasterCoderTesty
         {
             var f = Silnia.GetInstance();
             var z = f.CalculateCount(number: 11, b: 3);
-            Assert.AreEqual("2210002222120000", Silnia.CalculateString(11, 3));
             Assert.AreEqual(expected: 4, actual: z);
+        }
+
+        [TestMethod]
+        public void test_czy_zadanie4_przykład_2()
+        {
+            var f = Silnia.GetInstance();
+            var z = f.CalculateCount(number: 13, b: 7);
+            Assert.AreEqual(expected: 1, actual: z);
+        }
+
+        [TestMethod]
+        public void test_czy_zadanie4_przykład_3()
+        {
+            var f = Silnia.GetInstance();
+            var z = f.CalculateCount(number: 15, b: 10);
+            Assert.AreEqual(expected: 3, actual: z);
+        }
+
+        [TestMethod]
+        public void test_czy_zadanie4_przykład_4()
+        {
+            var f = Silnia.GetInstance();
+            var z = f.CalculateCount(number: 30, b: 16);
+            Assert.AreEqual(expected: 6, actual: z);
         }
     }
 }
