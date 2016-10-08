@@ -27,6 +27,8 @@ Z = floor(n/5) + floor(n/5^2) + ... + floor(n/5^k)
 
 k = floor(log5(n))
 
+[Finding Number of Trailing Zeros in Factorials](http://mathforum.org/library/drmath/view/66749.html)
+
 # Historia
 
 Do zrobienia
