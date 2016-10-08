@@ -26,7 +26,7 @@ Do zrobienia
 * [ ] Zadanie 1. Konwerter
 * [x] Zadanie 2. Dostarczanie paliwa na stacjê kosmiczn¹
 * [x] Zadanie 3. Tajemnicze sygna³y
-* [ ] Zadanie 4
+* [ ] Zadanie 4. Silnia - ile zer na koñcu
 * [ ] Zadanie 5
 * [ ] Zadanie 6
 * [ ] Zadanie 7
