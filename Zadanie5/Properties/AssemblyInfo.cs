@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // Ogólne informacje o zestawie są kontrolowane poprzez następujący 
 // zestaw atrybutów. Zmień wartości tych atrybutów, aby zmodyfikować informacje
 // powiązane z zestawem.
-[assembly: AssemblyTitle("Zadanie5")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Kupno i sprzedaż akcji")]
+[assembly: AssemblyDescription("Kupno i sprzedaż akcji")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Damian Hintz")]
 [assembly: AssemblyProduct("Zadanie5")]

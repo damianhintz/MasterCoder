@@ -1,4 +1,4 @@
-# MasterCoder v5.0-alfa, 10 paŸdziernika 2016
+# MasterCoder v5.0-beta, 10 paŸdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwi¹zania
@@ -38,7 +38,7 @@ Do zrobienia
 * [ ] Zadanie 1. Konwerter
 * [x] Zadanie 2. Dostarczanie paliwa na stacjê kosmiczn¹
 * [x] Zadanie 3. Tajemnicze sygna³y
-* [ ] Zadanie 4. Silnia - ile zer na koñcu
+* [x] Zadanie 4. Silnia - ile zer na koñcu
 * [ ] Zadanie 5
 * [ ] Zadanie 6
 * [ ] Zadanie 7
@@ -46,7 +46,7 @@ Do zrobienia
 * [ ] Zadanie 9
 * [ ] Zadanie 10
 
-2016-10-10 v5.0-alfa
+2016-10-10 v5.0-beta
 
 2016-10-08 v4.0-beta
 
