@@ -32,7 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IFactorialTrailingZeros.cs" />
+    <Compile Include="Base10SilniaZero.cs" />
     <Compile Include="SilniaZero.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
