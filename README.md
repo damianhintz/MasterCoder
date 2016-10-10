@@ -1,4 +1,4 @@
-# MasterCoder v4.0-alfa, 8 paüdziernika 2016
+# MasterCoder v5.0-alfa, 10 paüdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwiπzania
@@ -29,6 +29,8 @@ k = floor(log5(n))
 
 [Finding Number of Trailing Zeros in Factorials](http://mathforum.org/library/drmath/view/66749.html)
 
+## Zadanie 5
+
 # Historia
 
 Do zrobienia
@@ -43,6 +45,8 @@ Do zrobienia
 * [ ] Zadanie 8
 * [ ] Zadanie 9
 * [ ] Zadanie 10
+
+2016-10-10 v5.0-alfa
 
 2016-10-08 v4.0-beta
 
