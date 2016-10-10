@@ -39,9 +39,31 @@ namespace MasterCoderTesty
             values[0] = 1;
             values[values.Count - 1] = 2;
             var result = z5.FindMaxProfitRecursive(values);
-            Assert.AreEqual(expected: 1, actual: result.Value);
-            Assert.AreEqual(expected: 0, actual: result.LeftIndex);
+            Assert.AreEqual(expected: 2, actual: result.Value);
+            Assert.AreEqual(expected: 1, actual: result.LeftIndex);
             Assert.AreEqual(expected: 999999, actual: result.RightIndex);
+        }
+
+        [TestMethod]
+        public void test_czy_zadanie5_4()
+        {
+            var z5 = KupnoAkcji.GetInstance();
+            var values = new int[] { 2, 1, 1, 2, 1, 3, 2, 5 };
+            var result = z5.FindMaxProfitRecursive(values.ToList());
+            Assert.AreEqual(expected: 4, actual: result.Value);
+            Assert.AreEqual(expected: 1, actual: result.LeftIndex);
+            Assert.AreEqual(expected: 7, actual: result.RightIndex);
+        }
+
+        [TestMethod]
+        public void test_czy_zadanie5_3()
+        {
+            var z5 = KupnoAkcji.GetInstance();
+            var values = new int[] { 3, 1, 3 };
+            var result = z5.FindMaxProfitRecursive(values.ToList());
+            Assert.AreEqual(expected: 2, actual: result.Value);
+            Assert.AreEqual(expected: 1, actual: result.LeftIndex);
+            Assert.AreEqual(expected: 2, actual: result.RightIndex);
         }
     }
 }

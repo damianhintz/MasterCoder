@@ -48,6 +48,8 @@ Do zrobienia
 
 2016-10-10 v5.0-beta
 
+* Rozwi¹zanie [zadanie 5]
+
 2016-10-08 v4.0-beta
 
 * Rozwi¹zanie [zadania 4](https://www.mastercoder.pl/Tasks)

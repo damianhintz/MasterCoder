@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace StockExchangeProfit
 {
-    public class KupnoAkcji : IStockExchangeProfit
+    public class NaiwneKupnoAkcji : IStockExchangeProfit
     {
         public new static IStockExchangeProfit GetInstance()
         {
-            stockInstance = new KupnoAkcji();
+            stockInstance = new NaiwneKupnoAkcji();
             return stockInstance;
         }
 
@@ -19,16 +19,20 @@ namespace StockExchangeProfit
             var leftIndex = 0;
             var rightIndex = 1;
             var maxProfit = values[1] - values[0];
-            for (int i = 0, j = 1; j < values.Count; j++)
+            for (int i = 0; i < values.Count - 1; i++)
             {
-                var profit = values[j] - values[i];
-                if (profit > maxProfit)
+                var leftValue = values[i];
+                for (int j = i + 1; j < values.Count; j++)
                 {
-                    leftIndex = i;
-                    rightIndex = j;
-                    maxProfit = profit;
+                    var rightValue = values[j];
+                    var profit = rightValue - leftValue;
+                    if (profit > maxProfit)
+                    {
+                        maxProfit = profit;
+                        leftIndex = i;
+                        rightIndex = j;
+                    }
                 }
-                if (profit < 0) i = j;
             }
             return new TaskResult()
             {
