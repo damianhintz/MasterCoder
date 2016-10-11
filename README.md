@@ -1,4 +1,4 @@
-# MasterCoder v5.0-beta, 10 paŸdziernika 2016
+# MasterCoder v6.0-alfa, 11 paŸdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwi¹zania
@@ -31,6 +31,8 @@ k = floor(log5(n))
 
 ## Zadanie 5
 
+## Zadanie 6
+
 # Historia
 
 Do zrobienia
@@ -39,7 +41,7 @@ Do zrobienia
 * [x] Zadanie 2. Dostarczanie paliwa na stacjê kosmiczn¹
 * [x] Zadanie 3. Tajemnicze sygna³y
 * [x] Zadanie 4. Silnia - ile zer na koñcu
-* [ ] Zadanie 5
+* [x] Zadanie 5. Sprzeda¿ i kupno akcji
 * [ ] Zadanie 6
 * [ ] Zadanie 7
 * [ ] Zadanie 8
