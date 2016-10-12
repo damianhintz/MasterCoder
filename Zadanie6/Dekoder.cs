@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Decoder
 {
@@ -16,30 +15,25 @@ namespace Decoder
 
         public override Result decode(long value, string alphabet)
         {
-            var s = new List<int>();
-            var n = 0;
-            while (value > 3 && s.Count < 12 && n++ < 12)
+            var decodedText = string.Empty;
+            var countLetters = 0;
+            while (value > 3 && countLetters++ < 12)
             {
-                for (int i = 0; i < alphabet.Length; i++)
-                {
-                    if ((value - i) % 29 == 0)
-                    {
-                        value = (value - i) / 29;
-                        s.Insert(0, i);
-                        break;
-                    }
-                }
+                var index = FindLetterIndex(value, alphabet);
+                if (index < 0) break; //failure
+                value = (value - index) / 29;
+                decodedText = alphabet[index] + decodedText; //build text
             }
-            var success = value == 3 ?
-                ResultCode.SUCCESS :
-                ResultCode.FAILURE;
-            var text = new String(
-                s.Select(i => alphabet[i])
-                .ToArray());
-            if (success == ResultCode.FAILURE) text = string.Empty;
-            return new Result(
-                decodedText: text,
-                codeResult: success);
+            if (value == 3) return new Result(decodedText, ResultCode.SUCCESS);
+            else return new Result(string.Empty, ResultCode.FAILURE);
+        }
+
+        int FindLetterIndex(long value, string alphabet)
+        {
+            for (int i = 0; i < alphabet.Length; i++)
+                if ((value - i) % 29 == 0)
+                    return i;
+            return -1;
         }
 
         public static long code(string what, string alphabet)

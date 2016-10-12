@@ -1,4 +1,4 @@
-# MasterCoder v6.0-beta, 11 paüdziernika 2016
+# MasterCoder v6.1-beta, 12 paüdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwiπzania
@@ -31,7 +31,11 @@ k = floor(log5(n))
 
 ## Zadanie 5
 
+Sprzedaø i kupno akcji.
+
 ## Zadanie 6
+
+Udaremnij atak terrorystyczny.
 
 # Historia
 
@@ -42,11 +46,15 @@ Do zrobienia
 * [x] Zadanie 3. Tajemnicze sygna≥y
 * [x] Zadanie 4. Silnia - ile zer na koÒcu
 * [x] Zadanie 5. Sprzedaø i kupno akcji
-* [ ] Zadanie 6
+* [ ] Zadanie 6. Udaremnij atak terrorystyczny
 * [ ] Zadanie 7
 * [ ] Zadanie 8
 * [ ] Zadanie 9
 * [ ] Zadanie 10
+
+2016-10-12 v6.1-beta
+
+* Aktualizacja: refaktoryzacja rozwiπzania zadania 6
 
 2016-10-11 v6.0-beta
 
