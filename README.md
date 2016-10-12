@@ -1,4 +1,4 @@
-# MasterCoder v6.1-beta, 12 paüdziernika 2016
+# MasterCoder v7.0-alfa, 12 paüdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwiπzania
@@ -37,6 +37,8 @@ Sprzedaø i kupno akcji.
 
 Udaremnij atak terrorystyczny.
 
+## Zadanie 7
+
 # Historia
 
 Do zrobienia
@@ -46,7 +48,7 @@ Do zrobienia
 * [x] Zadanie 3. Tajemnicze sygna≥y
 * [x] Zadanie 4. Silnia - ile zer na koÒcu
 * [x] Zadanie 5. Sprzedaø i kupno akcji
-* [ ] Zadanie 6. Udaremnij atak terrorystyczny
+* [x] Zadanie 6. Udaremnij atak terrorystyczny
 * [ ] Zadanie 7
 * [ ] Zadanie 8
 * [ ] Zadanie 9
