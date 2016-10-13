@@ -1,4 +1,4 @@
-# MasterCoder v7.1-beta, 13 paŸdziernika 2016
+# MasterCoder v8.0-beta, 13 paŸdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwi¹zania
@@ -41,6 +41,8 @@ Udaremnij atak terrorystyczny.
 
 Przyjêcie.
 
+## Zadanie 8
+
 # Historia
 
 Do zrobienia
@@ -51,10 +53,12 @@ Do zrobienia
 * [x] Zadanie 4. Silnia - ile zer na koñcu
 * [x] Zadanie 5. Sprzeda¿ i kupno akcji
 * [x] Zadanie 6. Udaremnij atak terrorystyczny
-* [ ] Zadanie 7. Przyjêcie
+* [x] Zadanie 7. Przyjêcie
 * [ ] Zadanie 8
 * [ ] Zadanie 9
 * [ ] Zadanie 10
+
+2016-10-13 v8.1-alfa
 
 2016-10-13 v7.1-beta
 

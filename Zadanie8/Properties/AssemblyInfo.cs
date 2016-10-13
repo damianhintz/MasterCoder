@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Ogólne informacje o zestawie są kontrolowane poprzez następujący 
 // zestaw atrybutów. Zmień wartości tych atrybutów, aby zmodyfikować informacje
 // powiązane z zestawem.
-[assembly: AssemblyTitle("Konkurs programistyczny MasterCoder")]
-[assembly: AssemblyDescription("Konkurs programistyczny MasterCoder")]
+[assembly: AssemblyTitle("Zadanie8")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Damian Hintz")]
-[assembly: AssemblyProduct("MasterCoder")]
+[assembly: AssemblyProduct("Zadanie8")]
 [assembly: AssemblyCopyright("Copyright © Damian Hintz 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Następujący identyfikator GUID jest identyfikatorem biblioteki typów w przypadku udostępnienia tego projektu w modelu COM
-[assembly: Guid("50332173-c35c-4861-94b4-88ca8bcbf29e")]
+[assembly: Guid("cf55f617-611f-4e87-878a-51a7b0b43c3c")]
 
 // Informacje o wersji zestawu zawierają następujące cztery wartości:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Możesz określić wszystkie wartości lub użyć domyślnych numerów kompilacji i poprawki 
 // przy użyciu symbolu „*”, tak jak pokazano poniżej:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("8.0.0.0")]
-[assembly: AssemblyFileVersion("8.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
