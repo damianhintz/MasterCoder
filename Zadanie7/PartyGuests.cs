@@ -17,44 +17,46 @@ namespace Party
             uint noOfGuests, uint maxDifference, uint noOfTables, uint chairsPerTable,
             List<int> answer)
         {
-            var tables = new List<List<int>>();
-            for (int i = 0; i < noOfTables; i++) tables.Add(new List<int>());
-            guestList.Sort();
-            var guests = new Stack<int>(guestList);
+            var guests = new Stack<int>(
+                from g
+                in guestList
+                orderby g descending
+                select g);
             int indexStolika = 0;
+            var stoliki = new List<Stack<int>>();
+            for (int i = 0; i < noOfTables; i++) stoliki.Add(new Stack<int>());
             while (guests.Count > 0)
             {
-                var stolik = tables[indexStolika]; //następny stolik
-                //dodaj ludzi do stolika
-                var first = guests.Pop();
-                stolik.Add(first); //dodaj pierwszą osobę
-                var second = guests.Pop();
-                stolik.Add(second); //dodaj drugą osobę, bo nie może być tylko jedna
-                for (int i = 2; i < chairsPerTable; i++)
+                var stolik = stoliki[indexStolika]; //następny stolik
+                var wiekPierwszego = guests.Pop();
+                stolik.Push(wiekPierwszego); //dodaj pierwszą osobę
+                for (int i = 1; i < chairsPerTable; i++)
                 {
-                    if (guests.Count == 0) break; //brak gości
-                    var age = guests.Peek();
-                    var dif = Math.Abs(age - first);
-                    if (dif > maxDifference) break; //nie dodawaj już więcej osób, bo jest za duża różnica
-                    if (guests.Count == 2 && //zostały już tylko dwie osoby
-                        i == chairsPerTable - 1 //zostało już tylko jedno miejsce
-                        ) break; //zostaw te dwie osoby na ostatni stolik
-                    stolik.Add(guests.Pop());
+                    if (guests.Count == 0)
+                        break; //brak gości
+                    if (Math.Abs(guests.Peek() - wiekPierwszego) > maxDifference)
+                        break; //nie dodawaj już więcej osób, bo jest za duża różnica wieku
+                    stolik.Push(guests.Pop()); //dodaj tą osobe do stolika
+                }
+                //podbierz osoby z poprzednich stolików jeżeli przy tym jest tylko jedna
+                var indexPoprzedniego = indexStolika - 1;
+                while (stolik.Count == 1)
+                {
+                    var poprzedniStolik = stoliki[indexPoprzedniego];
+                    stolik.Push(poprzedniStolik.Pop()); //zabierz z poprzdniego
+                    stolik = poprzedniStolik; //sprawdź czy w poprzednim nie została też jedna osoba
+                    indexPoprzedniego--;
                 }
                 indexStolika++;
             }
-            for (int i = 0; i < tables.Count; i++)
+            //przygotuj odpowiedź
+            for (int i = 0; i < stoliki.Count; i++)
             {
-                var table = tables[i];
-                for (int j = 0; j < table.Count; j++)
-                {
-                    var age = table[j];
-                    answer.Add(age);
-                }
-                for (int j = table.Count; j < chairsPerTable; j++)
-                {
-                    answer.Add(0);
-                }
+                var stolik = stoliki[i].OrderBy(age => age);
+                //dodawanie gości do stolika
+                foreach (var age in stolik) answer.Add(age);
+                //dodawanie pustych miejsc
+                for (int j = stolik.Count(); j < chairsPerTable; j++) answer.Add(0);
             }
         }
     }

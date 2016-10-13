@@ -60,6 +60,40 @@ namespace MasterCoderTesty
             ValidateAnswer(a, 0, 2, 3);
         }
 
+        [TestMethod]
+        public void test_czy_zadanie7_4()
+        {
+            var z7 = PartyGuests.GetInstance();
+            var guests = new List<int>() {
+                1, 2, 3, 5,
+                5, 9,
+                10, 14, 14, 14,
+                14, 15, 16,
+                16, 17,
+                21, 25};
+            var answer = new List<int>();
+            z7.placeGuests(guestList: guests,
+                noOfGuests: (uint)guests.Count, 
+                maxDifference: 4, 
+                noOfTables: 6, 
+                chairsPerTable: 4,
+                answer: answer);
+            ValidateAnswer(answer, 4, 6, 4);
+            var expected = new int[] {
+                1, 2, 3, 5,
+                5, 9, 0, 0,
+                10, 14, 14, 14,
+                14, 15, 16, 0,
+                16, 17, 0, 0,
+                21, 25, 0, 0
+            };
+            var s = string.Join(", ", answer);
+            for(int i = 0; i < expected.Length; i++)
+            {
+                Assert.AreEqual(expected[i], answer[i], s);
+            }
+        }
+
         void ValidateAnswer(List<int> answer, int r, int s, int m)
         {
             Assert.AreEqual(expected: s * m, actual: answer.Count);

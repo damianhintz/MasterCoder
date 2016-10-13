@@ -1,4 +1,4 @@
-# MasterCoder v7.0-alfa, 12 paŸdziernika 2016
+# MasterCoder v7.1-beta, 13 paŸdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwi¹zania
@@ -39,6 +39,8 @@ Udaremnij atak terrorystyczny.
 
 ## Zadanie 7
 
+Przyjêcie.
+
 # Historia
 
 Do zrobienia
@@ -49,10 +51,18 @@ Do zrobienia
 * [x] Zadanie 4. Silnia - ile zer na koñcu
 * [x] Zadanie 5. Sprzeda¿ i kupno akcji
 * [x] Zadanie 6. Udaremnij atak terrorystyczny
-* [ ] Zadanie 7
+* [ ] Zadanie 7. Przyjêcie
 * [ ] Zadanie 8
 * [ ] Zadanie 9
 * [ ] Zadanie 10
+
+2016-10-13 v7.1-beta
+
+* Poprawione: rozwi¹zanie zadania 7
+
+2016-10-13 v7.0-beta
+
+* Nowoœæ: rozwi¹zanie zadania 7
 
 2016-10-12 v6.1-beta
 
