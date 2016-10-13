@@ -2,14 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Party;
+using Hanoi;
 
 namespace MasterCoder
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            var hanoi = new HanoiTowers(4);
+            var solve = new HanoiSolver();
+            solve.solveHanoi(hanoi);
+            Console.WriteLine("Koniec.");
+            Console.Read();
+        }
+
+        static void Z7()
         {
             var z7 = PartyGuests.GetInstance();
             var guests = new List<int>() {
@@ -27,7 +36,6 @@ namespace MasterCoder
                 chairsPerTable: 4,
                 answer: answer);
             Console.WriteLine(string.Join(", ", answer));
-            Console.Read();
         }
     }
 }
