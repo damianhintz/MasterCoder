@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Zadanie8;
+using Hanoi;
 
 namespace MasterCoderTesty
 {
@@ -10,6 +10,13 @@ namespace MasterCoderTesty
         [TestMethod]
         public void test_czy_zadanie8_przykład()
         {
+            for (int i = 0; i <= 16; i++)
+            {
+                var hanoi = new HanoiTowers(n: i);
+                var solve = new RekurencyjnyHanoiSolver();
+                solve.solveHanoi(hanoi);
+                //hanoi.Print();
+            }
         }
     }
 }

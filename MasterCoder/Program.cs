@@ -17,11 +17,13 @@ namespace MasterCoder
 
         static void SolveZadanie8()
         {
-            var hanoi = new HanoiTowers(n: 4, rods: 3);
-            //var solve = new IteracyjnyHanoiSolver();
-            var solve = new RekurencyjnyHanoiSolver();
-            solve.solveHanoi(hanoi);
-            hanoi.Print();
+            for (int i = 0; i <= 16; i++)
+            {
+                var hanoi = new HanoiTowers(n: i, rods: 4);
+                var solve = new RekurencyjnyHanoiSolver();
+                solve.solveHanoi(hanoi);
+                hanoi.Print();
+            }
         }
 
         static void SolveZadanie7()

@@ -9,7 +9,7 @@ namespace Hanoi
         int _numberOfDisks;
         Stack<int>[] _rods;
 
-        public HanoiTowers(int n, int rods = 3)
+        public HanoiTowers(int n, int rods = 4)
         {
             _numberOfDisks = n;
             _rods = new Stack<int>[rods];
@@ -18,7 +18,6 @@ namespace Hanoi
                 _rods[i] = new Stack<int>();
             }
             for (int i = n - 1; i >= 0; i--) _rods[0].Push(i);
-            for (int i = n; i >= 1; i--) _rods[1].Push(i);
         }
 
         public override int checkTopDisk(uint rod)
@@ -53,7 +52,7 @@ namespace Hanoi
             {
                 Console.WriteLine(rod + ": " + string.Join(" ", from d in _rods[rod].Reverse() select d));
             }
-            Console.Read();
+            //Console.Read();
         }
     }
 }

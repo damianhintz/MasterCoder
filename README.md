@@ -1,4 +1,4 @@
-# MasterCoder v8.0-beta, 13 paŸdziernika 2016
+# MasterCoder v8.0-beta, 14 paŸdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwi¹zania
@@ -54,11 +54,13 @@ Do zrobienia
 * [x] Zadanie 5. Sprzeda¿ i kupno akcji
 * [x] Zadanie 6. Udaremnij atak terrorystyczny
 * [x] Zadanie 7. Przyjêcie
-* [ ] Zadanie 8
+* [ ] Zadanie 8. Wie¿a Hanoi
 * [ ] Zadanie 9
 * [ ] Zadanie 10
 
-2016-10-13 v8.1-alfa
+2016-10-14 v8.0-beta
+
+* Nowoœæ: rozwi¹zanie zadania 8
 
 2016-10-13 v7.1-beta
 
