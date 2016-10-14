@@ -1,0 +1,9 @@
+﻿BEGIN:VCARD
+N:Jan Kowalski
+PHOTO:oijasdcokmasodijcocmoijasdcokmasodIjcocmoijasdcokmasodijcocmoijasdcokmasodijco
+asodijcocmoijasdcokmasodijcocmoijasdcokmasOdijcocmoijasdcokmasodijcocmoijasdco
+asodijcocmoijasdcokYYJrr
+
+TEL:696 969 696
+ADR:ul. Dowborczykow 25, 90-993 Lodz
+EMAIL:jan.kowalski@cybercom.com

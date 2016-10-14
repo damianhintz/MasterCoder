@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Zadanie9Test.cs" />
     <Compile Include="Zadanie8Test.cs" />
     <Compile Include="Zadanie7Test.cs" />
     <Compile Include="Zadanie6Test.cs" />
@@ -95,6 +96,14 @@
       <Project>{cf55f617-611f-4e87-878a-51a7b0b43c3c}</Project>
       <Name>Zadanie8</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Zadanie9\Zadanie9.csproj">
+      <Project>{45dbae14-0cf4-4e1a-9f38-0fa99ca2cd1a}</Project>
+      <Name>Zadanie9</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Samples\vCard0.txt" />
+    <Content Include="Samples\vCard1.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

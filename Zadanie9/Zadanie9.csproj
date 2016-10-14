@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{50332173-C35C-4861-94B4-88CA8BCBF29E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{45DBAE14-0CF4-4E1A-9F38-0FA99CA2CD1A}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MasterCoder</RootNamespace>
-    <AssemblyName>MasterCoder</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Parser</RootNamespace>
+    <AssemblyName>Zadanie9</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,25 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="CardParser.cs" />
+    <Compile Include="IParserListener.cs" />
+    <Compile Include="IParser.cs" />
+    <Compile Include="ParserListener.cs" />
+    <Compile Include="ParseStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Zadanie7\Zadanie7.csproj">
-      <Project>{27ac826a-76e3-4b3d-aaf0-9e401389b480}</Project>
-      <Name>Zadanie7</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Zadanie8\Zadanie8.csproj">
-      <Project>{cf55f617-611f-4e87-878a-51a7b0b43c3c}</Project>
-      <Name>Zadanie8</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Zadanie9\Zadanie9.csproj">
-      <Project>{45dbae14-0cf4-4e1a-9f38-0fa99ca2cd1a}</Project>
-      <Name>Zadanie9</Name>
-    </ProjectReference>
+    <Compile Include="vCardStruct.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

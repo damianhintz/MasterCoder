@@ -1,4 +1,4 @@
-# MasterCoder v8.0-beta, 14 paüdziernika 2016
+# MasterCoder v9.0-alfa, 14 paüdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwiπzania
@@ -42,6 +42,12 @@ Udaremnij atak terrorystyczny.
 PrzyjÍcie.
 
 ## Zadanie 8
+
+Wieøa Hanoi.
+
+## Zadanie 9
+
+Parser.
 
 # Historia
 
