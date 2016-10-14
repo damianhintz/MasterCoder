@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Party;
 using Hanoi;
 
@@ -11,14 +10,21 @@ namespace MasterCoder
     {
         static void Main(string[] args)
         {
-            var hanoi = new HanoiTowers(4);
-            var solve = new HanoiSolver();
-            solve.solveHanoi(hanoi);
+            SolveZadanie8();
             Console.WriteLine("Koniec.");
             Console.Read();
         }
 
-        static void Z7()
+        static void SolveZadanie8()
+        {
+            var hanoi = new HanoiTowers(n: 4, rods: 3);
+            //var solve = new IteracyjnyHanoiSolver();
+            var solve = new RekurencyjnyHanoiSolver();
+            solve.solveHanoi(hanoi);
+            hanoi.Print();
+        }
+
+        static void SolveZadanie7()
         {
             var z7 = PartyGuests.GetInstance();
             var guests = new List<int>() {

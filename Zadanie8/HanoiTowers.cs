@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hanoi
 {
@@ -19,10 +17,8 @@ namespace Hanoi
             {
                 _rods[i] = new Stack<int>();
             }
-            for (int i = n - 1; i >= 0; i--)
-            {
-                _rods[0].Push(i);
-            }
+            for (int i = n - 1; i >= 0; i--) _rods[0].Push(i);
+            for (int i = n; i >= 1; i--) _rods[1].Push(i);
         }
 
         public override int checkTopDisk(uint rod)
@@ -38,7 +34,6 @@ namespace Hanoi
 
         public override bool moveDisk(uint fromRod, uint toRod)
         {
-            
             var disk = checkTopDisk(fromRod);
             var toDisk = checkTopDisk(toRod);
             if (toDisk >= 0 && disk > toDisk)
@@ -47,15 +42,18 @@ namespace Hanoi
                     "Nie można przenosić dużego na mały");
             }
             _rods[toRod].Push(_rods[fromRod].Pop());
-            
-            //Console.WriteLine(string.Join(", ", from r in _rods select r.Count));
-            for(int rod = 0;rod < _rods.Length; rod++)
-            {
-                Console.WriteLine(string.Join(" ", from d in _rods[rod].Reverse() select d));
-            }
-            Console.WriteLine();
-            Console.Read();
+            //Print();
             return true;
+        }
+
+        public void Print()
+        {
+            Console.WriteLine("Hanoi:");
+            for (int rod = 0; rod < _rods.Length; rod++)
+            {
+                Console.WriteLine(rod + ": " + string.Join(" ", from d in _rods[rod].Reverse() select d));
+            }
+            Console.Read();
         }
     }
 }

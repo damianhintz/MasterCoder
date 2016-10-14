@@ -40,7 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HanoiSolver.cs" />
+    <Compile Include="RekurencyjnyHanoiSolver.cs" />
+    <Compile Include="IteracyjnyHanoiSolver.cs" />
     <Compile Include="HanoiTowers.cs" />
     <Compile Include="IHanoi.cs" />
     <Compile Include="IHanoiSolver.cs" />

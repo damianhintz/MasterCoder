@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hanoi
 {
-    public class HanoiSolver : IHanoiSolver
+    public class IteracyjnyHanoiSolver : IHanoiSolver
     {
         public new static IHanoiSolver GetInstance()
         {
-            m_hanoiSolverInstance = new HanoiSolver();
+            m_hanoiSolverInstance = new IteracyjnyHanoiSolver();
             return m_hanoiSolverInstance;
         }
 
@@ -77,17 +75,6 @@ namespace Hanoi
                 hanoi.checkTopDisk(1) < 0)
                     break;
                 hanoi.moveDisk(fromRod, toRod);
-            }
-        }
-
-        // przekłada n krążków z A, korzystając z B, na C
-        void solve(IHanoi h, int n, int A, int B, int C)
-        {
-            if (n > 0)
-            {
-                solve(h, n - 1, A, C, B);
-                Console.WriteLine("\t{0} -> {1}", A, C);
-                solve(h, n - 1, B, A, C);
             }
         }
     }
