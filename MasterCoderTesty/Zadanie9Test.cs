@@ -40,8 +40,6 @@ namespace MasterCoderTesty
             foreach (var c in bufferChars)
             {
                 var status = z9.parse(c.ToString());
-                //Assert.AreEqual(expected: ParseStatus.PARSE_STATUS_MORE_DATA, actual: status, message: "char: " + c);
-                //Assert.AreEqual(expected: 0, actual: listener.Count());
             }
             Assert.AreEqual(expected: 2, actual: listener.Count());
         }
@@ -165,7 +163,7 @@ namespace MasterCoderTesty
                 "TEL:696 969 696\r\n" +
                 "ADR:ul.Dowborczykow 25, 90 - 993 Lodz\r\n" +
                 "EMAIL:jan.kowalski @cybercom.com\r\n" +
-                "END:VCARDBEGIN:VCARD"
+                "END:VCARDB"
                 );
             Assert.AreEqual(
                 expected: ParseStatus.PARSE_STATUS_MORE_DATA,

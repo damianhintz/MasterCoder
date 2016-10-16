@@ -1,4 +1,4 @@
-# MasterCoder v9.0-alfa, 14 paüdziernika 2016
+# MasterCoder v9.0-alfa, 16 paüdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwiπzania

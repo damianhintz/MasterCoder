@@ -22,13 +22,21 @@ namespace Parser
         {
             //if (string.IsNullOrEmpty(buffer)) return ParseStatus.PARSE_STATUS_OK;
             _buffer.Append(buffer);
-            buffer = _buffer.ToString();
+            buffer = _buffer
+                .ToString()
+                .Replace("\r\nEND:VCARDB", "\r\nEND:VCARD\r\nB");
             var lines = buffer.Split(
                 separator: new string[] { "\r\n" },
                 options: StringSplitOptions.None);
             vCardStruct card = null;
             StringBuilder photoData = null;
-            for (int i = _lastUnparsedCardLine; i < lines.Length; i++)
+            var lastLine = lines.Last();
+            var wholeLastLine =
+                buffer.EndsWith("\r\n") ||
+                buffer.EndsWith("\r\nEND:VCARD");
+            var minusOne = wholeLastLine ? 0 : -1;
+            var length = lines.Length + minusOne;
+            for (int i = _lastUnparsedCardLine; i < length; i++)
             {
                 var line = lines[i];
                 if (line.Equals("BEGIN:VCARD"))
@@ -38,6 +46,7 @@ namespace Parser
                 }
                 else if (line.StartsWith("N:"))
                 {
+                    if (card == null) throw new InvalidOperationException();
                     card.Name = line.Substring(2);
                 }
                 else if (line.StartsWith("PHOTO:"))
@@ -69,12 +78,7 @@ namespace Parser
                     card = null;
                     photoData = null;
                 }
-                else if (line.Equals("END:VCARDBEGIN:VCARD"))
-                {
-                    if (card != null) _listener.newVCard(card);
-                    card = new vCardStruct();
-                    _lastUnparsedCardLine = i;
-                } else
+                else
                 {
                     if (photoData != null) photoData.Append(line);
                     else
@@ -83,7 +87,7 @@ namespace Parser
                     }
                 }
             }
-            return card == null && 
+            return card == null &&
                 (_lastUnparsedCardLine >= lines.Length || string.IsNullOrEmpty(lines.Last())) ?
                 ParseStatus.PARSE_STATUS_OK :
                 ParseStatus.PARSE_STATUS_MORE_DATA;
