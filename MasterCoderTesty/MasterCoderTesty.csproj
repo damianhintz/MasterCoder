@@ -103,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Samples\vCard0.txt" />
+    <Content Include="Samples\vCard2.txt" />
+    <Content Include="Samples\vCard2b.txt" />
+    <Content Include="Samples\vCard2a.txt" />
     <Content Include="Samples\vCard1.txt" />
   </ItemGroup>
   <Choose>

@@ -1,0 +1,7 @@
+END:VCARDBEGIN:VCARD
+N:Name2
+PHOTO:photo2
+TEL:696 969 696
+ADR:ul. Dowborczykow 25, 90-993 Lodz
+EMAIL:jan.kowalski@cybercom.com
+END:VCARD

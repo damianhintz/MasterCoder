@@ -13,6 +13,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie1", "Zadanie1\Zadanie1.csproj", "{B1D9F96B-2D9C-4BEF-AFA3-0090BD42D4E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterCoderTesty", "MasterCoderTesty\MasterCoderTesty.csproj", "{AB933D68-8985-4C56-B9B1-84B9B3EEC806}"
+	ProjectSection(ProjectDependencies) = postProject
+		{45DBAE14-0CF4-4E1A-9F38-0FA99CA2CD1A} = {45DBAE14-0CF4-4E1A-9F38-0FA99CA2CD1A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie2", "Zadanie2\Zadanie2.csproj", "{EA5EC0A6-2040-4B48-BA20-33AC5D7385A1}"
 EndProject

@@ -1,4 +1,4 @@
-﻿BEGIN:VCARD
+BEGIN:VCARD
 N:Jan Kowalski
 PHOTO:oijasdcokmasodijcocmoijasdcokmasodIjcocmoijasdcokmasodijcocmoijasdcokmasodijco
 asodijcocmoijasdcokmasodijcocmoijasdcokmasOdijcocmoijasdcokmasodijcocmoijasdco
