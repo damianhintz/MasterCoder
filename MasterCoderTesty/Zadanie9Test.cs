@@ -11,6 +11,79 @@ namespace MasterCoderTesty
     public class Zadanie9Test
     {
         [TestMethod]
+        public void test_czy_zadanie9_przykład_paczki2_no_new_line()
+        {
+            var z9 = CardParser.GetInstance();
+            var listener = new ParserListener();
+            z9.setParserListener(listener);
+            var buffer =
+                "BEGIN:VCARD\r\n" +
+                "N:Jan Kowalski\r\n" +
+                "PHOTO:oijasdcokmasodijcocmoijasdcokmasodIjcocmoijasdcokmasodijcocmoijasdcokmasodijco\r\n" +
+                "asodijcocmoijasdcokmasodijcocmoijasdcokmasOdijcocmoijasdcokmasodijcocmoijasdco\r\n" +
+                "asodijcocmoijasdcokYYJrr\r\n" +
+                "\r\n" +
+                "TEL:696 969 696\r\n" +
+                "ADR:ul.Dowborczykow 25, 90 - 993 Lodz\r\n" +
+                "EMAIL:jan.kowalski @cybercom.com\r\n" +
+                "END:VCARDBEGIN:VCARD\r\n" +
+                "N:Jan Kowalski\r\n" +
+                "PHOTO:oijasdcokmasodijcocmoijasdcokmasodIjcocmoijasdcokmasodijcocmoijasdcokmasodijco\r\n" +
+                "asodijcocmoijasdcokmasodijcocmoijasdcokmasOdijcocmoijasdcokmasodijcocmoijasdco\r\n" +
+                "asodijcocmoijasdcokYYJrr\r\n" +
+                "\r\n" +
+                "TEL:696 969 696\r\n" +
+                "ADR:ul.Dowborczykow 25, 90 - 993 Lodz\r\n" +
+                "EMAIL:jan.kowalski @cybercom.com\r\n" +
+                "END:VCARD";
+            var bufferChars = buffer.ToCharArray();
+            foreach (var c in bufferChars)
+            {
+                var status = z9.parse(c.ToString());
+                //Assert.AreEqual(expected: ParseStatus.PARSE_STATUS_MORE_DATA, actual: status, message: "char: " + c);
+                //Assert.AreEqual(expected: 0, actual: listener.Count());
+            }
+            Assert.AreEqual(expected: 2, actual: listener.Count());
+        }
+
+        [TestMethod]
+        public void test_czy_zadanie9_przykład_paczki2()
+        {
+            var z9 = CardParser.GetInstance();
+            var listener = new ParserListener();
+            z9.setParserListener(listener);
+            var buffer =
+                "BEGIN:VCARD\r\n" +
+                "N:Jan Kowalski\r\n" +
+                "PHOTO:oijasdcokmasodijcocmoijasdcokmasodIjcocmoijasdcokmasodijcocmoijasdcokmasodijco\r\n" +
+                "asodijcocmoijasdcokmasodijcocmoijasdcokmasOdijcocmoijasdcokmasodijcocmoijasdco\r\n" +
+                "asodijcocmoijasdcokYYJrr\r\n" +
+                "\r\n" +
+                "TEL:696 969 696\r\n" +
+                "ADR:ul.Dowborczykow 25, 90 - 993 Lodz\r\n" +
+                "EMAIL:jan.kowalski @cybercom.com\r\n" +
+                "END:VCARD\r\n" +
+                "BEGIN:VCARD\r\n" +
+                "N:Jan Kowalski\r\n" +
+                "PHOTO:oijasdcokmasodijcocmoijasdcokmasodIjcocmoijasdcokmasodijcocmoijasdcokmasodijco\r\n" +
+                "asodijcocmoijasdcokmasodijcocmoijasdcokmasOdijcocmoijasdcokmasodijcocmoijasdco\r\n" +
+                "asodijcocmoijasdcokYYJrr\r\n" +
+                "\r\n" +
+                "TEL:696 969 696\r\n" +
+                "ADR:ul.Dowborczykow 25, 90 - 993 Lodz\r\n" +
+                "EMAIL:jan.kowalski @cybercom.com\r\n" +
+                "END:VCARD";
+            var bufferChars = buffer.ToCharArray();
+            foreach (var c in bufferChars)
+            {
+                var status = z9.parse(c.ToString());
+                //Assert.AreEqual(expected: ParseStatus.PARSE_STATUS_MORE_DATA, actual: status, message: "char: " + c);
+                //Assert.AreEqual(expected: 0, actual: listener.Count());
+            }
+            Assert.AreEqual(expected: 2, actual: listener.Count());
+        }
+
+        [TestMethod]
         public void test_czy_zadanie9_przykład_paczki()
         {
             var z9 = CardParser.GetInstance();
