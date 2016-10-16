@@ -79,11 +79,12 @@ namespace Parser
                     if (photoData != null) photoData.Append(line);
                     else
                     {
-                        if (card != null) return ParseStatus.PARSE_STATUS_ERROR;
+                        if (card != null) return ParseStatus.PARSE_STATUS_MORE_DATA;
                     }
                 }
             }
-            return card == null ?
+            return card == null && 
+                (_lastUnparsedCardLine >= lines.Length || string.IsNullOrEmpty(lines.Last())) ?
                 ParseStatus.PARSE_STATUS_OK :
                 ParseStatus.PARSE_STATUS_MORE_DATA;
         }

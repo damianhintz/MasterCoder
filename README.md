@@ -64,6 +64,10 @@ Do zrobienia
 * [ ] Zadanie 9
 * [ ] Zadanie 10
 
+2016-10-16 v9.0-beta
+
+* Nowoœæ: rozwi¹zanie zadania 9
+
 2016-10-14 v8.0-beta
 
 * Nowoœæ: rozwi¹zanie zadania 8
