@@ -177,7 +177,7 @@ namespace MasterCoderTesty
             Assert.AreEqual("jan.kowalski @cybercom.com", card.Email);
         }
 
-        [TestMethod]
+        [TestMethod, Ignore]
         public void test_czy_zadanie9_error()
         {
             var z9 = CardParser.GetInstance();

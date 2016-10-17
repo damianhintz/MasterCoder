@@ -54,6 +54,30 @@
       <Project>{98070a5c-7a31-4478-9ef5-84e17075c88c}</Project>
       <Name>Zadanie10</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Zadanie1\Zadanie1.csproj">
+      <Project>{b1d9f96b-2d9c-4bef-afa3-0090bd42d4e8}</Project>
+      <Name>Zadanie1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zadanie2\Zadanie2.csproj">
+      <Project>{ea5ec0a6-2040-4b48-ba20-33ac5d7385a1}</Project>
+      <Name>Zadanie2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zadanie3\Zadanie3.csproj">
+      <Project>{8c21581f-e256-4824-9297-7374eb0e5862}</Project>
+      <Name>Zadanie3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zadanie4\Zadanie4.csproj">
+      <Project>{1f7b30c1-0afc-48dc-90cd-1ae55ace8b52}</Project>
+      <Name>Zadanie4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zadanie5\Zadanie5.csproj">
+      <Project>{fb18bf46-49af-4f0f-92ef-9e43479d3742}</Project>
+      <Name>Zadanie5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zadanie6\Zadanie6.csproj">
+      <Project>{2b8e4c1e-5033-4472-8d60-39b21d137e00}</Project>
+      <Name>Zadanie6</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Zadanie7\Zadanie7.csproj">
       <Project>{27ac826a-76e3-4b3d-aaf0-9e401389b480}</Project>
       <Name>Zadanie7</Name>

@@ -1,4 +1,4 @@
-# MasterCoder v9.0-alfa, 16 paüdziernika 2016
+# MasterCoder v10.0-alfa, 17 paüdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
 
 # Szkic rozwiπzania
@@ -49,6 +49,8 @@ Wieøa Hanoi.
 
 Parser.
 
+## Zadanie 10
+
 # Historia
 
 Do zrobienia
@@ -63,6 +65,8 @@ Do zrobienia
 * [x] Zadanie 8. Wieøa Hanoi
 * [x] Zadanie 9. Parser
 * [ ] Zadanie 10
+
+2016-10-17 v10.0-alfa
 
 2016-10-16 v9.0-beta
 
