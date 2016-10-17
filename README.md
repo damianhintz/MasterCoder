@@ -60,8 +60,8 @@ Do zrobienia
 * [x] Zadanie 5. Sprzeda¿ i kupno akcji
 * [x] Zadanie 6. Udaremnij atak terrorystyczny
 * [x] Zadanie 7. Przyjêcie
-* [ ] Zadanie 8. Wie¿a Hanoi
-* [ ] Zadanie 9
+* [x] Zadanie 8. Wie¿a Hanoi
+* [x] Zadanie 9. Parser
 * [ ] Zadanie 10
 
 2016-10-16 v9.0-beta
