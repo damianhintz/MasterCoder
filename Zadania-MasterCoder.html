@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0032)https://www.mastercoder.pl/Tasks -->
-<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
                             </li>
                             
                         </ul>
-                        <form action="https://www.mastercoder.pl/Account/LogOff" class="" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="djQqHShF9SR3jaotGSIURO0e6zpmyXN1kDI3nBB904lD0e6xee07HL8BYoRBO4yKuQAQoGz8qKhtnGQ74FXxACUzj2ivnrzCILVHdUOJqisMmei7cIqdqrwE5CzY1DoxD48m-LlM5-s_GmmJmeLqMQ2">        <ul class="nav navbar-nav navbar-right">
+                        <form action="https://www.mastercoder.pl/Account/LogOff" class="" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="tgXo9qAOJ7pqqh5YMewhprF-c1S_t9lPG3LJIgeG2_D8if9OZW9auQgyhUQyNGLc_FU2kR0wF_GiJ6yQTywiO6Wgo7tqION1kFa5YmWYnFMp2XCIJ_gtSFhgz-t6_Qi6Vbm8WLmq1EjprTECTj05tQ2">        <ul class="nav navbar-nav navbar-right">
             <li class="username">
                 <a class="navlink" href="https://www.mastercoder.pl/Manage/ChangePassword" title="Zarządzaj">damianhintz</a>
             </li>
@@ -80,6 +80,83 @@
                     Pliki
                 </h1>
             </div>
+
+<div id="task-item-10">
+        <div class="col-sm-13">
+            <div id="task-title" class="row">
+                <div class="col-sm-11">
+                    <h3 class="text-bg text-worksans-bold">
+                        <span href="#task-item-10">Kolonizacja marsa (RBS)</span>
+                    </h3>
+                </div>
+                <div class="col-sm-5">
+                    <div class="pull-right">
+                        <div class="bottom">
+                            <span class="glyphicon glyphicon-time text-danger" data-toggle="tooltip" data-placement="left" title="" data-original-title="Czas zakończenia">
+                            </span>
+                            18 października 2016 20:00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-13">
+            <div class="mc-well">
+                <p>CyberJaś&nbsp;jest głównym oficerem łączności w trakcie misji kolonizacyjnej Marsa. Obszar planety podzielony został na dystrykty wraz z lokalnym centrum dowodzenia, które znajduje się pośrodku każdego z nich. W trakcie konfigurowania łączności między dystryktami Jasiu natrafił na problem… niektóre z sąsiadujących ze sobą baz zagłuszały się wzajemnie. Okazało się że nadają na zbyt zbliżonych częstotliwościach. Jasiu ma do dyspozycji ograniczoną ilość częstotliwości. Pomóż mu rozdzielić częstotliwości tak, aby zapewnić dystryktom stałą, niezakłóconą łączność z Ziemią.</p>
+<p>&nbsp;</p>
+<p>Ze względu na zmienne warunki parametry mapy częstotliwości mogą się zmieniać. Tak samo rozmiar mapy, gdyż z czasem obszar pokryty zasięgiem będzie rósł. Zasady nadal są proste:</p>
+<p>&nbsp;</p>
+<ul>
+<li>Dystrykty są kwadratami. Każdy sąsiaduje z maksymalnie ośmioma innymi.&nbsp;</li>
+<li>Zbadano, że częstotliwości w sąsiadujących dystryktach zagłuszają się jeśli różnica jest mniejsza niż&nbsp;minDiff&nbsp;(wartość zależy od warunków atmosferycznych i jest podawana jako argument przy rozmieszczaniu częstotliwości).&nbsp;</li>
+<li>Mapa ma zmienny rozmiar A obszarów (kolumn) na B obszarów (wierszy). Także podawane jako argumenty.&nbsp;</li>
+<li>Dostępne częstotliwości są przydzielane przez Ministerstwo Telekomunikacji i też są zmienne (ich ilość jak i wartości). Są podawane jako argument (jako lista nieposortowana).&nbsp;</li>
+</ul>
+<p>&nbsp;</p>
+<p>Mapa wyliczona przez Jasia powinna mieć postać listy o rozmiarze A*B gdzie kolejne wartości reprezentują kolejne wiersze.</p>
+<p>&nbsp;</p>
+<p>Poniżej znajduje się przykład&nbsp;<strong>poprawnej</strong>&nbsp;mapy gdzie A = 7, B = 5,&nbsp;minDiff&nbsp;= 3, częstotliwości to: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16.&nbsp;<strong>Małe indeksy</strong>&nbsp;w rogu obszarów reprezentują kolejne indeksy w zwróconej liście.</p>
+<p>&nbsp;</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="./Zadania - MasterCoder_files/kolonizacja1.png" alt=""></p>
+<p>&nbsp;</p>
+<p>Natomiast tak wygląda&nbsp;<strong>niepoprawnie</strong>&nbsp;stworzona mapa (z błędami zaznaczonymi na&nbsp;<span style="color: #ff0000;"><strong>czerwono</strong></span>):</p>
+<p>&nbsp;</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="./Zadania - MasterCoder_files/kolonizacja2.png" alt=""></p>
+<p>&nbsp;</p>
+<p>Możliwe jest, że nie da się rozmieścić częstotliwości na mapie tak, aby się nie zagłuszały. Wtedy należy zwrócić<strong> pustą listę.</strong>&nbsp;</p>
+<p><strong>Nie jest wymagane, żeby wykorzystać wszystkie dostępne częstotliwości.</strong>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Rozwiązanie powinno implementować interfejs&nbsp;<strong>IFrequencyDistributor</strong>. Wysyłamy&nbsp;<strong>jeden&nbsp;</strong>plik kodu źródłowego zawierający&nbsp;<strong>tylko i wyłącznie</strong>&nbsp;klasę implementującą interfejs. Kolejne nadsyłane pliki będą nadpisywały poprzednie (liczy się czas ostatniego uploadu).</p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="text-center">
+    <div class="row">
+            <div class="col-md-5">
+                <a href="https://www.mastercoder.pl/Tasks/DownloadAttachment?taskNo=10&amp;fileName=IFrequencyDistributor.cs" class="text-bold text-primary" style="font-size: 14px">
+                            <img src="./Zadania - MasterCoder_files/csharp.png" alt="Pobierz C#" title="IFrequencyDistributor.cs" width="50" height="60">
+                    Pobierz
+                </a>
+            </div>
+            <div class="col-md-5">
+                <a href="https://www.mastercoder.pl/Tasks/DownloadAttachment?taskNo=10&amp;fileName=IFrequencyDistributor.h" class="text-bold text-primary" style="font-size: 14px">
+                            <img src="./Zadania - MasterCoder_files/cpp.png" alt="Pobierz C++" title="IFrequencyDistributor.h" width="50" height="60">
+                    Pobierz
+                </a>
+            </div>
+            <div class="col-md-5">
+                <a href="https://www.mastercoder.pl/Tasks/DownloadAttachment?taskNo=10&amp;fileName=IFrequencyDistributor.java" class="text-bold text-primary" style="font-size: 14px">
+                            <img src="./Zadania - MasterCoder_files/java.png" alt="Pobierz Java" title="IFrequencyDistributor.java" width="50" height="60">
+                    Pobierz
+                </a>
+            </div>
+    </div>
+</div>
+        </div>
+</div>
+
 
 <div id="task-item-9">
         <div class="col-sm-13">

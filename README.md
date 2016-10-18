@@ -1,5 +1,9 @@
-# MasterCoder v10.0-alfa, 17 paŸdziernika 2016
+# MasterCoder v10.0-beta, 18 paŸdziernika 2016
 [Konkurs programistyczny MasterCoder](https://www.mastercoder.pl/Home)
+
+# Moja pozycja
+
+Miejsce 9 (512 pkt)
 
 # Szkic rozwi¹zania
 
@@ -51,6 +55,8 @@ Parser.
 
 ## Zadanie 10
 
+Kolonizacja Marsa.
+
 # Historia
 
 Do zrobienia
@@ -64,9 +70,11 @@ Do zrobienia
 * [x] Zadanie 7. Przyjêcie
 * [x] Zadanie 8. Wie¿a Hanoi
 * [x] Zadanie 9. Parser
-* [ ] Zadanie 10
+* [x] Zadanie 10. Kolonizacja Marsa
 
-2016-10-17 v10.0-alfa
+2016-10-17 v10.0-beta
+
+* Nowoœæ: rozwi¹zanie zadania 10
 
 2016-10-16 v9.0-beta
 
