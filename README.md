@@ -3,7 +3,9 @@
 
 # Moja pozycja
 
-Miejsce 9 (512 pkt)
+Miejsce 9 (512 pkt).
+
+[Do fina³owego etapu zostanie zakwalifikowanych 10 osób](Regulamin.pdf)
 
 # Szkic rozwi¹zania
 
